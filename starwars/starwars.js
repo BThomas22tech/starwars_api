@@ -11,6 +11,6 @@ async function get_api() {
         var h1 = document.getElementById("title");
         var eye = document.getElementById("eye_color")
         h1.innerText = "Character: " + character_name;
-        eye.innerText = "eye color: " + eye_color
+        eye.innerText = "Eye color: " + eye_color
     
 }

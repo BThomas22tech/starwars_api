@@ -8,3 +8,14 @@
     margin-top: 10px;
     overflow: auto;
 }
+body{
+    background-color: azure;
+}
+#eye_color{
+    text-align: center;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
