@@ -32,9 +32,13 @@ background-image:
 body{
     background-color: azure;
 }
-#eye_color,#title{
+#eye_color,#title,.movies,.characters{
     text-align: center;
     color: yellow;
+}
+.movies,.characters{
+    text-align: center;
+    display: block;
 }
 
 h1{
