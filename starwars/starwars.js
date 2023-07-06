@@ -18,25 +18,25 @@ async function get_api() {
     eye.style.color = eye_color;
 }
 
-async function get_movie(character_number) {
+async function get_movie() {
     var response = await fetch("https://www.swapi.tech/api/films/")
     var data = await response.json()
-    // console.log(data.result)
 
     var movies = data.result
-    var movieTitles = []
     var h1 = document.getElementById("title");
 
     for (var i = 0; i < movies.length; i++){
         var movie = movies[i]
         var title = movie.properties.title
+    if (h1.childElementCount >= 6){
+        return
+    }
 
         var movietag = document.createElement("p");
         movietag.textContent = title;
 
         h1.appendChild(movietag)
         console.log(title)
-        // return movieTitles
 
     }
 }
